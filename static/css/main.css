@@ -26,7 +26,7 @@ h1.logo {
 	background-size:100%;
 	background-repeat: no-repeat;
 	background-image: url('../img/beauvoir-logo.png');
-	margin: 100px auto 50px auto }
+	margin: 0 auto }
 
 .invite {
 	width:95%;
@@ -54,6 +54,9 @@ h1.logo {
 
 
 @media (min-width: 800px) {
+
+	h1.logo { margin: 20px auto 50px auto }
+
 	.flex {
 		display: flex }
 		.half {
