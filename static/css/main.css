@@ -8,7 +8,7 @@ body {
 	background-image: 
     radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 100%),  
     url('../img/beauvoir-background.png');
-  background-size: 100%;
+  background-size: cover;
  	background-position: top;
   background-repeat: no-repeat;
   min-height: 80dvh;
@@ -50,22 +50,25 @@ h1.logo {
 .invite .half p:first-child { margin-top: 0 }
 
 .invite .visit {position: relative}
-.invite .visit:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 4px;
-	height: 100%;
-	background: rgba(255, 255, 255, 0.8)
 
+.invite .visit:before { display: none }
+
+
+@media (min-width: 600px) {
+	.flex {
+		display: flex }
+		.half {
+			box-sizing: content-box;
+			width: 50% }
+		}
+	.invite .visit:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 4px;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.8)
+	}
 }
-
-
-.flex {
-	display: flex }
-
-	.half {
-		box-sizing: content-box;
-
-		width: 50% }
