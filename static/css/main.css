@@ -1,0 +1,71 @@
+body, html {
+	margin: 0;
+	padding: 0 }
+
+html { min-height:100% }
+
+body {
+	background-image: 
+    radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 100%),  
+    url('../img/beauvoir-background.png');
+  background-size: 100%;
+ 	background-position: top;
+  background-repeat: no-repeat;
+  min-height: 80dvh;
+
+  font-family: Verdana;
+  color: white;
+}
+
+
+
+h1.logo {
+	color: transparent;
+	width: 95%;
+	max-width: 600px;
+	aspect-ratio: 16/10;
+	background-size:100%;
+	background-repeat: no-repeat;
+	background-image: url('../img/beauvoir-logo.png');
+	margin: 100px auto 50px auto }
+
+.invite {
+	width:95%;
+	margin: auto;
+	max-width: 720px;
+	text-align: center;
+	height: 175px;
+}
+
+.invite .phone {
+	color: white;
+	text-decoration: none;
+}
+
+.invite .large {
+	font-weight: bold;
+	font-size: 1.5em }
+
+.invite .half { padding: 20px }
+.invite .half p:first-child { margin-top: 0 }
+
+.invite .visit {position: relative}
+.invite .visit:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.8)
+
+}
+
+
+.flex {
+	display: flex }
+
+	.half {
+		box-sizing: content-box;
+
+		width: 50% }
