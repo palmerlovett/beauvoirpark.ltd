@@ -2,16 +2,15 @@ body, html {
 	margin: 0;
 	padding: 0 }
 
-html { min-height:100% }
-
 body {
 	background-image: 
     radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 100%),  
     url('../img/beauvoir-background.png');
   background-size: cover;
+  background-attachment: fixed;
  	background-position: top;
   background-repeat: no-repeat;
-  min-height: 80dvh;
+
 
   font-family: Verdana;
   color: white;
@@ -54,7 +53,7 @@ h1.logo {
 .invite .visit:before { display: none }
 
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	.flex {
 		display: flex }
 		.half {
