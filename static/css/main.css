@@ -60,7 +60,6 @@ h1.logo {
 		.half {
 			box-sizing: content-box;
 			width: 50% }
-		}
 	.invite .visit:before {
 		content: '';
 		display: block;
