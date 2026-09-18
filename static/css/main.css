@@ -39,6 +39,8 @@ h1.logo {
 .invite .phone {
 	color: white;
 	text-decoration: none;
+	position: relative;
+  top: 12px;
 }
 
 .invite .large {
